@@ -1,0 +1,30 @@
+{
+  "name": "emedia/php-helpers",
+  "description": "PHP Helper functions and static classes",
+  "type": "project",
+  "require": {
+    "php": ">=7.2.5",
+    "nesbot/carbon": "1.*|2.*",
+    "ext-dom": "*"
+  },
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "Shane Perera",
+      "email": "shane@elegantmedia.com.au"
+    }
+  ],
+  "autoload": {
+    "files": [
+      "src/global_functions/array_helpers.php",
+      "src/global_functions/validation_helpers.php",
+      "src/global_functions/string_helpers.php"
+    ],
+    "psr-4": {
+      "EMedia\\PHPHelpers\\": "src/"
+    }
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^7.5"
+  }
+}
